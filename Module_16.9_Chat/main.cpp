@@ -2,17 +2,17 @@
 
 int main()
 {
-    Chat chat;  // Создаю объект класса "Чат"
+    Chat chat;  // РЎРѕР·РґР°СЋ РѕР±СЉРµРєС‚ РєР»Р°СЃСЃР° "Р§Р°С‚"
 
     chat.start();
 
-    while (chat.isChatOpen())  // Пока чат работает
+    while (chat.isChatOpen())  // РџРѕРєР° С‡Р°С‚ СЂР°Р±РѕС‚Р°РµС‚
     {
-        chat.showLoginMenu();  // Вывожу меню входа в систему
+        chat.showLoginMenu();  // Р’С‹РІРѕР¶Сѓ РјРµРЅСЋ РІС…РѕРґР° РІ СЃРёСЃС‚РµРјСѓ
 
-        while (chat.getCurrentUser())  // Пока указатель на текущего пользователя не nullptr
+        while (chat.getCurrentUser())  // РџРѕРєР° СѓРєР°Р·Р°С‚РµР»СЊ РЅР° С‚РµРєСѓС‰РµРіРѕ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РЅРµ nullptr
         {
-            chat.showUserMenu();  // Вывожу пользовательское меню
+            chat.showUserMenu();  // Р’С‹РІРѕР¶Сѓ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРѕРµ РјРµРЅСЋ
         }
     }
     return 0;

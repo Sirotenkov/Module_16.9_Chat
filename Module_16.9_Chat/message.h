@@ -4,9 +4,9 @@
 class Message
 {
 private:
-	const std::string _from;      // От кого
-	const std::string _to;        // Кому
-	const std::string _message;   // Текст сообщения
+	const std::string _from;      // РћС‚ РєРѕРіРѕ
+	const std::string _to;        // РљРѕРјСѓ
+	const std::string _message;   // РўРµРєСЃС‚ СЃРѕРѕР±С‰РµРЅРёСЏ
 public:
 	Message(const std::string& from, const std::string& to, const std::string& message) :
 		_from(from), _to(to), _message(message) {}

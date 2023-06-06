@@ -7,7 +7,7 @@ class User
 {
 private:
 	const std::string _login;
-	std::vector<uint> _password;  // Создаю стандартный контейнер vector для хранения данных о паролях пользователей
+	std::vector<uint> _password;  // РЎРѕР·РґР°СЋ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Р№ РєРѕРЅС‚РµР№РЅРµСЂ vector РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РґР°РЅРЅС‹С… Рѕ РїР°СЂРѕР»СЏС… РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
 public:
 	User(const std::string& login, const std::string password) : _login(login) {
 		setUserPassword(password);
