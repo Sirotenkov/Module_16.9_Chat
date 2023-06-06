@@ -1,0 +1,10 @@
+﻿  chat.cpp
+C:\Users\Aleksey\Desktop\Module_16.9_Chat\Module_16.9_Chat\user.h(32,63): warning C4267: аргумент: преобразование из "size_t" в "uint"; возможна потеря данных
+C:\Users\Aleksey\Desktop\Module_16.9_Chat\Module_16.9_Chat\chat.h(62,66): warning C4267: аргумент: преобразование из "size_t" в "uint"; возможна потеря данных
+  main.cpp
+C:\Users\Aleksey\Desktop\Module_16.9_Chat\Module_16.9_Chat\user.h(32,63): warning C4267: аргумент: преобразование из "size_t" в "uint"; возможна потеря данных
+C:\Users\Aleksey\Desktop\Module_16.9_Chat\Module_16.9_Chat\chat.h(62,66): warning C4267: аргумент: преобразование из "size_t" в "uint"; возможна потеря данных
+  sha1.cpp
+C:\Users\Aleksey\Desktop\Module_16.9_Chat\Module_16.9_Chat\sha1.cpp(55,23): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода...
+  Module_16.9_Chat.vcxproj -> C:\Users\Aleksey\Desktop\Module_16.9_Chat\Module_16.9_Chat\x64\Debug\Module_16.9_Chat.exe
