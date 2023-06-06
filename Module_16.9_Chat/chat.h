@@ -16,16 +16,16 @@ struct UserLoginExceptions : public std::exception  //
 class Chat
 {
 private:
-	bool _isChatOpen = false;                       // переменна¤-флаг, показывающа¤, открыт чат или нет
-	std::vector<User> _users;                       // †контейнер пользователей vector
-	std::vector<Message> _messages;                 // †контейнер сообщений vector
-	User const* _currentUser = nullptr;             // указатель на текущего пользовател¤
+	bool _isChatOpen = false;                       // переменная-флаг, показывающая, открыт чат или нет
+	std::vector<User> _users;                       // контейнер пользователей vector
+	std::vector<Message> _messages;                 // контейнер сообщений vector
+	User const* _currentUser = nullptr;             // указатель на текущего пользователя
 
-	void login();                                   // объ¤вление функции входа в систему
-	void signUp();                                  // объ¤вление функции регистрации пользовател¤
-	void showChat();                                // объ¤вление функции отображени¤ меню чата
-	void showAllUsers();                            // объ¤вление функции отображени¤ всех пользователей системы
-	void addMessage();                              // объ¤вление функции добавлени¤ сообщений
+	void login();                                   // объявление функции входа в систему
+	void signUp();                                  // объявление функции регистрации пользователя
+	void showChat();                                // объявление функции отображения меню чата
+	void showAllUsers();                            // объявление функции отображения всех пользователей системы
+	void addMessage();                              // объявление функции добавления сообщений
 
 	std::vector<User>& getAllUsers()
 	{
@@ -37,18 +37,18 @@ private:
 		return _messages;
 	}
 
-	User const* getUserByLogin(const std::string& login) const;  // объ¤вление функции возвращени¤ указател¤ на пользовател¤ по логину
+	User const* getUserByLogin(const std::string& login) const;  // объявление функции возвращения указателя на пользователя по логину
 
 public:
 
-	void start();  // объ¤вление функции, показывающей работает чат или нет
+	void start();  // объявление функции, показывающей работает чат или нет
 
 	bool isChatOpen() const
 	{
 		return _isChatOpen;
 	}
 
-	User const* getCurrentUser() const  // метод, возвращающий указатель на текущего пользовател¤
+	User const* getCurrentUser() const  // метод, возвращающий указатель на текущего пользователя
 	{
 		return _currentUser;
 	}
@@ -57,11 +57,11 @@ public:
 
 	void showUserMenu();                 // метод, отображающий пользовательское меню
 
-	bool isEqualPassword(std::string password, uint const* hash)  // метод, сравнивающий хэши паролей дл¤ валидации пользовател¤
+	bool isEqualPassword(std::string password, uint const* hash)  // метод, сравнивающий хэши паролей для валидации пользователя
 	{
-		uint* passwordHash = sha1((char*)password.data(), password.size());  // переменна¤ со значением хэша введенного парол¤
-		int res = memcmp(passwordHash, hash, SHA1HASHLENGTHUINTS);           // переменна¤ со значением результата сравнени¤ вычисленного хэша с хран¤щимс¤
-		delete[] passwordHash;                                               // удаление хэша введенного парол¤
-		return res == 0;                                                     // если результат равен нулю, то сравниваемые значени¤ совпали
+		uint* passwordHash = sha1((char*)password.data(), password.size());  // переменная со значением хэша введенного пароля
+		int res = memcmp(passwordHash, hash, SHA1HASHLENGTHUINTS);           // переменная со значением результата сравнения вычисленного хэша с хранящимся
+		delete[] passwordHash;                                               // удаление хэша введенного пароля
+		return res == 0;                                                     // если результат равен нулю, то сравниваемые значения совпали
 	};
 };
